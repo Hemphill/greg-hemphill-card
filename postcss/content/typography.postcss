@@ -1,0 +1,132 @@
+* {
+  -webkit-font-feature-settings: "liga" on, "calt" on;
+  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/*
+ By setting the html tag to 10px on desktop sizes, we get some clean rem sizing where
+ the rem size is one decimal off from the px size. So for example 1.8rem = 18px.
+*/
+html {
+  font-size: 8px;
+}
+@media (min-width: 480px) {
+  html { font-size: 9px; }
+}
+@media (min-width: 768px) {
+  html { font-size: 10px;}
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  line-height: 1.8;
+}
+
+a {
+  color: #94b9de;
+  text-decoration: none;
+  &:visited {
+    color: #cba3e0;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 2.0rem;
+}
+
+ul, ol{
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+li {
+  margin-top: 0.5rem;
+  margin-bottom: 1.0rem;
+}
+
+li::marker {
+  color: #8e8d8b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: 'ChunkFive';
+  margin-top: 4.0rem;
+  margin-bottom: 0;
+  line-height: 1.2;
+  a {
+    color: inherit;
+  }
+  & a:visited {
+    color: #999;
+  }
+}
+
+h1 { font-size: 5.8rem; margin-top: 8.0rem; }
+h2 { font-size: 5.2rem; margin-top: 8.0rem; }
+h3 { font-size: 4.6rem; margin-top: 6.0rem; }
+h4 { font-size: 4.0rem; margin-top: 6.0rem; letter-spacing: 0.02em; }
+h5 { font-size: 3.4rem; margin-top: 4.0rem; letter-spacing: 0.04em; }
+h6 { font-size: 2.8rem; margin-top: 4.0rem; letter-spacing: 0.06em; }
+
+
+blockquote {
+  padding: 0 0 0 1.75rem;
+  margin: 0 3rem 1.5rem -2.2rem;
+  color: #aeadab;
+  border-left: 0.5rem solid #8e8d8b;
+}
+
+pre, code {
+  font-family: 'JetBrains Mono';
+}
+
+code {
+  color: #cc7833;
+  color: #d89c6a;
+  color: #e8b68c;
+}
+
+
+hr {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #cc7833;
+  color: #cc7833;
+  text-align: center;
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+}
+hr:before {
+  content: "☆";
+  display: inline-block;
+  position: relative;
+  top: -2.5rem;
+  font-size: 2.5rem;
+  padding: 0 0.5rem;
+  margin-right: 2.0rem;
+  border-radius: 2.5rem;
+  background-color: #333230;
+  background-image: url("/img/transparent_texture.png");
+}
+hr:after {
+  content: "☆";
+  display: inline-block;
+  position: relative;
+  top: -2.5rem;
+  font-size: 2.5rem;
+  padding: 0 0.5rem;
+  margin-left: 2.0rem;
+  background-color: #333230;
+  background-image: url("/img/transparent_texture.png");
+}

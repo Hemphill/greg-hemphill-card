@@ -1,0 +1,14 @@
+version: '3'
+services:
+  server:
+    image: node:12
+    command: node server.js
+    volumes:
+      - .:/code
+    ports:
+      - 8080n :8080
+  node:
+    image: node:12
+    working_dir: /code
+    volumes:
+      - .:/code

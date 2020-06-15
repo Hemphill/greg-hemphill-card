@@ -1,0 +1,25 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# AUTHOR
+
+    Name: Greg Hemphill
+    Site: https://greghemphill.com
+    Twitter: @hemphill
+    Location: Palm Harbor, FL USA
+
+# TECHNOLOGY COLOPHON
+
+    - Written in CSS3 & HTML5
+    - Started with HTML5 Boilerplate
+    - PostCSS used for authoring Style Sheets.
+      The following PostCSS plugins are used:
+      - postcss-import
+      - postcss-nested
+      - postcss-custom-properties
+      - autoprefixer
+    - Build system made in NPM.
+    - Docker used for development. Node 12 image.
+    - Hosted on GitHub Pages by compiling everything into the docs folder
+    - Developed in the Rubymine IDE
+    - Developed on a MacBook Pro

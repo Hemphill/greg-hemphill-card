@@ -1,0 +1,56 @@
+{
+  "name": "greg-hemphill-card",
+  "version": "1.0.0",
+  "description": "Greg Hemphill online card.",
+  "author": "Greg Hemphill",
+  "license": "private",
+  "private": true,
+  "watch": {
+    "build:html": {
+      "patterns": [
+        "html"
+      ],
+      "extensions": "html,txt",
+      "quiet": true,
+      "legacyWatch": true,
+      "delay": 1000,
+      "runOnChangeOnly": false
+    },
+    "build:img": {
+      "patterns": [
+        "img"
+      ],
+      "extensions": "png,jpg,jpeg,gif,svg",
+      "quiet": true,
+      "legacyWatch": true,
+      "delay": 1000,
+      "runOnChangeOnly": false
+    }
+  },
+  "scripts": {
+    "build": "npm-run-all -p build:*",
+    "build:html": "cp -a ./html/* ./docs",
+    "build:img": "rm -rf ./docs/img* ; cp -a ./img/* ./docs/img",
+    "build:css": "postcss postcss/greg-hemphill.postcss -o docs/css/greg-hemphill.css",
+    "watch": "npm-run-all -p watch:*",
+    "watch:css": "postcss postcss/greg-hemphill.postcss -o docs/css/greg-hemphill.css --watch",
+    "watch:html": "npm-watch build:html",
+    "watch:img": "npm-watch build:img"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemphill/greg-hemphill-card.git"
+  },
+  "homepage": "https://greghemphill.com",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "express": "^4.17.1",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "npm-watch": "^0.6.0",
+    "postcss-cli": "^7.1.1",
+    "postcss-custom-properties": "^9.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1"
+  }
+}
