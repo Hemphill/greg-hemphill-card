@@ -6,7 +6,7 @@ services:
     volumes:
       - .:/code
     ports:
-      - 8080n :8080
+      - "3100:3100"
   node:
     image: node:12
     working_dir: /code

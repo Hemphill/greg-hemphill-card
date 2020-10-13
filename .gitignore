@@ -11,3 +11,6 @@
 
 # Node Modules
 node_modules
+
+# Editor files
+.idea
