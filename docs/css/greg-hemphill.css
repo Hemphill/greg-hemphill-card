@@ -386,7 +386,7 @@ body {
   /* medium brown: #585756 */
 
   background-color: #241717;
-  background-image: url("../img/transparent_texture.png");
+  background-image: url("/img/transparent_texture.png");
   color: #eeebe7;
 }
 
@@ -551,7 +551,7 @@ img {
 .card {
 
   background-color: #333230;
-  background-image: url("../img/transparent_texture.png");
+  background-image: url("/img/transparent_texture.png");
   color:            #eeebe7;
   border-top:       #474643 1px solid;
   border-left:      #474643 1px solid;
