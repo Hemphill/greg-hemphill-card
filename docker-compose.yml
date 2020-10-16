@@ -1,14 +1,17 @@
 version: '3'
 services:
-  server:
-    image: node:12
-    command: node server.js
-    volumes:
-      - .:/code
-    ports:
-      - "3100:3100"
   node:
     image: node:12
     working_dir: /code
     volumes:
       - .:/code
+  web:
+    build: .
+    command: ruby server.rb -o 0.0.0.0
+    ports:
+      - 9494:9494
+    volumes:
+      - .:/code
+      - bundle:/usr/local/bundle
+volumes:
+  bundle:

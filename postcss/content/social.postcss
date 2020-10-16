@@ -1,0 +1,29 @@
+.social {
+  list-style: none;
+
+  /* fix for Safari accessibility bug */
+  .social-item::before {
+    content: "\200B";
+  }
+
+  .social-item {
+    height: 170px;
+    margin: 0;
+    padding: 0;
+    width: 33.333333333333333%;
+    float: left;
+    text-align: center;
+  }
+
+  .social-item, .social-item::visit {
+    color: #ccc;
+  }
+
+  .social-icon {
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5em;
+    display: block;
+  }
+}

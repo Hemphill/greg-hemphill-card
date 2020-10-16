@@ -101,11 +101,12 @@ hr {
   overflow: visible; /* For IE */
   padding: 0;
   border: none;
-  border-top: medium double #cc7833;
+  border-bottom: medium double #cc7833;
   color: #cc7833;
   text-align: center;
-  margin-top: 4.5rem;
+  padding-top: 4.0rem;
   margin-bottom: 4.5rem;
+  clear: both;
 }
 hr:before {
   content: "☆";
@@ -129,4 +130,10 @@ hr:after {
   margin-left: 2.0rem;
   background-color: #333230;
   background-image: url("/img/transparent_texture.png");
+}
+
+/* text utilities */
+
+.text-center {
+  text-align: center;
 }
